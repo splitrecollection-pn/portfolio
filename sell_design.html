@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KASUMI PORTFOLIO</title>
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- 共通ヘッダー読み込み -->
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    // hamburger.jsを読み込む
+    const script = document.createElement('script');
+    script.src = 'assets/js/hamburger.js';
+    document.body.appendChild(script);
+  });
+</script>
+<section class="">
+  <div class="project_title">
+    <h1 class="project_h1">ドラマDVDBOX</h1>
+    <div class="project_a"><a href=""></a>
+      <p class="project_p">graphic</p>
+    </div>
+  </div>
+  <div class="mockimg_area"> <img src="assets/img/Moonshine_BOXJKset.png" alt=""> </div>
+  <div class="feature_area">
+    <h1>FEATURE</h1>
+    <div class="feature">
+      <div class="f_title">概要</div>
+      <div class="f_caption">映像作品のセル販売用デザイン</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">制作期間</div>
+      <div class="f_caption">2026年1月</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">ポイント</div>
+      <div class="f_caption">時代劇作品のため、和紙などのテクスチャを利用して作品の世界観を尊重したデザインに仕上げた。化粧箱、ジャケット、レーベル通して一貫したデザインとなっている。</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">制作範囲</div>
+      <div class="f_caption">ラフデザイン / 入稿データ作成</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">使用ツール</div>
+      <div class="f_caption">Adobe Illustrator / Adobe PhotoShop </div>
+    </div>
+  </div>
+	<div class="designimg"><img class="design" src="assets/img/Moonshine_KY V1115-00_Hcase.png" alt=""></div>
+	<div class="designimg"><img class="design" src="assets/img/Monnshine_BOX1_jacket.png" alt=""></div>
+	<div class="designimg"><img class="design" src="assets/img/Moonshine_labelall.png" alt=""></div>
+
+</section>
+<footer><small>© 2026 kasumiharada</small></footer>
+</body>
+</html>

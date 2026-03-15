@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KASUMI PORTFOLIO</title>
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- 共通ヘッダー読み込み -->
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    // hamburger.jsを読み込む
+    const script = document.createElement('script');
+    script.src = 'assets/js/hamburger.js';
+    document.body.appendChild(script);
+  });
+</script>
+<section class="">
+  <div class="project_title">
+    <h1 class="project_h1">マイナビスタッフ様 LP</h1>
+    <div class="project_a"><a href=""></a>
+      <p class="project_p">LP</p>
+    </div>
+  </div>
+  <div class="mockimg_area"> <img src="assets/img/PClong_mockup1_.jpg" alt=""> </div>
+  <div class="feature_area">
+    <h1>FEATURE</h1>
+    <div class="feature">
+      <div class="f_title">概要</div>
+      <div class="f_caption">スクール課題として実際のクライアントLPを制作。</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">制作期間</div>
+      <div class="f_caption">2021年6月〜2021年07月</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">目的</div>
+      <div class="f_caption">マイナビスタッフ様の働き方をいかにわかりやすく魅力的にお伝えできるかが自分の中で苦戦しました。競合の派遣会社のLPなどを分析し、ユーザーが使用するシナリオを想定して情報設計に力を入れることで新規ユーザーの離脱を防ぎ登録者数を伸ばせるように制作しました。</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">制作範囲</div>
+      <div class="f_caption">情報設計 / デザイン </div>
+    </div>
+    <div class="feature">
+      <div class="f_title">使用ツール</div>
+      <div class="f_caption">PowerPoint / Excel / Adobe XD / Adobe Illustrator / Adobe PhotoShop </div>
+    </div>
+  </div>
+		<div class="designimg"><img class="design" src="assets/img/mynavi_f_webdesign.jpg" alt=""></div>
+</section>
+<footer><small>© 2026 kasumiharada</small></footer>
+</body>
+</html>

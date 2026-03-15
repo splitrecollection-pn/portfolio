@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KASUMI PORTFOLIO</title>
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- 共通ヘッダー読み込み -->
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    // hamburger.jsを読み込む
+    const script = document.createElement('script');
+    script.src = 'assets/js/hamburger.js';
+    document.body.appendChild(script);
+  });
+</script>
+<!--
+<header>
+  <div class="head_flexbox">
+    <div class="head_title"><a href="index.html">KASUMI HARADA</a></div>
+    <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+      <div class="nav_box">
+        <div class="head_nav"><a href="#works">WORKS</a></div>
+        <div class="head_nav"><a href="#about">ABOUT</a></div>
+        <div class="head_nav"><a href="#contact">CONTACT</a></div>
+      </div>
+    </div>
+</header>
+-->
+<div class="fv">
+  <div class="title">
+    <div class="fv_title"> KASUMI HARADA</div>
+    <div class="fv_title">PORT FOLIO</div>
+    <div class="fv_minititle">WEB DESIGN , GRAPHIC DESIGN</div>
+  </div>
+</div>
+<div class="maincontents">
+  <section class="works">
+    <h1 id="works">WORKS</h1>
+    <div class="website">
+      <p style="text-align: center; font-size: 0.8em; max-width: 80%; margin: 2rem auto;">下記以外にも制作実績はありますが、公開NG案件のため抜粋して掲載しております。<br>詳細はお問い合わせください。</p>
+      <h2 class="s_tt">web design</h2>
+      <ul class="pc_mock_box">
+        <li>
+          <div class="pc_mock"><a href="mina_webdesign.html"><img src="assets/img/PC_mockup2.jpg" alt=""></a>
+            <h3>mina illustratorsite</h3>
+            <p>WEBサイト/クライアントワーク</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock"><a href="mynavi_webdesign.html"><img src="assets/img/PC_mockup1.jpg" alt=""></a>
+            <h3>マイナビスタッフ様 LP</h3>
+            <p>LP/スクール課題（クライアントワーク）</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock"><a href="portfolio_webdesign.html"><img src="assets/img/PC_mockup4.jpg" alt=""></a>
+            <h3>KASUMI HARADA portfolio</h3>
+            <p>WEBサイト/自己制作</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock"><a href="gypla_webdesign.html"><img src="assets/img/PC_mockup3.jpg" alt=""></a>
+            <h3>Gypsophiure officialsite</h3>
+            <p>WEBサイト/自己制作</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="website">
+      <h2 class="s_tt">graphic</h2>
+      <ul class="pc_mock_box">
+        <li>
+          <div class="pc_mock"><a href="sell_design.html"><img src="assets/img/Moonshine_BOXJKset.jpg" alt=""></a>
+            <h3>ドラマDVDBOX</h3>
+            <p>セル、ジャケット、レーベルデザイン/社内制作物</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock"><a href="rental_design.html"><img src="assets/img/Dare to Love Me_jacket_JK.jpg" alt=""></a>
+            <h3>ドラマレンタルDVD</h3>
+            <p>レンタルジャケット、レーベル/社内制作物</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock"><img src="assets/img/poster2.jpg" alt="">
+            <h3>横須賀10000Mプロムナードフォトコンテスト</h3>
+            <p>ポスター/スクール課題、コンペ</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock"><img src="assets/img/poster3.jpg" alt="">
+            <h3>横須賀10000Mプロムナードフォトコンテスト</h3>
+            <p>ポスター/スクール課題、コンペ</p>
+          </div>
+        </li>
+        <!--
+        <li>
+          <div class="pc_mock"><img src="assets/img/graphic2.jpg" alt="">
+            <h3>poping soda</h3>
+            <p>パターンデザイン/自己制作</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock"><img src="assets/img/graphic1.jpg" alt="">
+            <h3>fleeting soda</h3>
+            <p>ロゴデザイン/自己制作</p>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+     <div class="website">
+      <h2 class="s_tt">video production</h2>
+      <ul class="pc_mock_box">
+        <li>
+          <div class="pc_mock"><iframe src="https://www.youtube.com/embed/lb1JhVefAzA" title="子供ができました" frameborder="0" allowfullscreen></iframe>
+            <h3>ティザー制作</h3>
+            <p>映像作品予告動画/社内制作物</p>
+          </div>
+        </li>
+       <li>
+          <div class="pc_mock"><iframe src="https://www.youtube.com/embed/pwlCaCOU1mE?si=g_0O7bih_4npnkdC" title="宇宙をあげる" frameborder="0" allowfullscreen></iframe>
+            <h3>ティザー制作</h3>
+            <p>映像作品予告動画/社内制作物</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock"><iframe src="https://www.youtube.com/embed/weoUQcinLg8?si=6MXLeImaCNDc7qhQ" title="次の人生はないから" frameborder="0" allowfullscreen></iframe>
+            <h3>ティザー制作</h3>
+            <p>映像作品予告動画/社内制作物</p>
+          </div>
+        </li>
+          <li>
+          <div class="pc_mock"><iframe src="https://www.youtube.com/embed/yyzoU8BXbhM?si=R7YCjF8lHjdDaGiL" title="かけがえのない私のスター" frameborder="0" allowfullscreen></iframe>
+            <h3>ティザー制作</h3>
+            <p>映像作品予告動画/社内制作物</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="skills">
+    <h1>SKILLS</h1>
+    <div class="software">
+      <ul>
+        <li></li>
+        <li>
+          <div class="skills_box">
+            <div class="soft_box">
+              <p>Adobe Photoshop</p>
+            </div>
+            <div class="star_box">
+              <div class="star"><img src="assets/img/1x/star1.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star2.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star3.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star4-line.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star5-line.png" alt=""> </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills_box">
+            <div class="soft_box">
+              <p>Adobe Illustrator</p>
+            </div>
+            <div class="star_box">
+              <div class="star"><img src="assets/img/1x/star1.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star2.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star3.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star4.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star5-line.png" alt=""> </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills_box">
+            <div class="soft_box">
+              <p>Adobe XD</p>
+            </div>
+            <div class="star_box">
+              <div class="star"><img src="assets/img/1x/star1.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star2.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star3.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star4-line.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star5-line.png" alt=""> </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills_box">
+            <div class="soft_box">
+              <p>Adobe Dreamweaver</p>
+            </div>
+            <div class="star_box">
+              <div class="star"><img src="assets/img/1x/star1.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star2.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star3.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star4-line.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star5-line.png" alt=""> </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills_box">
+            <div class="soft_box">
+              <p>Adobe Premiere Pro</p>
+            </div>
+            <div class="star_box">
+              <div class="star"><img src="assets/img/1x/star1.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star2.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star3.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star4.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star5-line.png" alt=""> </div>
+            </div>
+          </div>
+        </li>
+          <li>
+          <div class="skills_box">
+            <div class="soft_box">
+              <p>Adobe After Effects</p>
+            </div>
+            <div class="star_box">
+              <div class="star"><img src="assets/img/1x/star1.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star2.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star3.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star4-line.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star5-line.png" alt=""> </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills_box">
+            <div class="soft_box">
+              <p>CLIP STUDIO PAINT</p>
+            </div>
+            <div class="star_box">
+              <div class="star"><img src="assets/img/1x/star1.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star2.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star3.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star4-line.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star5-line.png" alt=""> </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills_box">
+            <div class="soft_box">
+              <p>Microsoft Excel</p>
+            </div>
+            <div class="star_box">
+              <div class="star"><img src="assets/img/1x/star1.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star2.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star3.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star4.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star5-line.png" alt=""> </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills_box">
+            <div class="soft_box">
+              <p>Microsoft Word</p>
+            </div>
+            <div class="star_box">
+              <div class="star"><img src="assets/img/1x/star1.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star2.png" alt=""></div>
+              <div class="star"><img src="assets/img/1x/star3.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star4-line.png" alt=""> </div>
+              <div class="star"><img src="assets/img/1x/star5-line.png" alt=""> </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="about">
+    <h1 id="about">ABOUT</h1>
+    <div class="icon"><img src="assets/img/icon1.png" alt=""></div>
+    <div class="caption">
+      <p>文化学園大学にてファッションを学び、アパレルメーカーに就職。<br>
+        その後、WEBデザインに興味を持ちデジタルハリウッドSTUDIOにてWEBデザインを学びつつ、<br>業務の一環として独学で動画制作を習得。<br>
+        2023年よりデザイナーとして就業し、現在に至ります。<br>
+        <br>
+        ユーザーに寄り添うことを第一に考えたデザインで、課題解決に導きたいと考えています。<br>
+        世界観を尊重した、女性らしい柔らかく空気感のあるデザインが得意です。</p>
+    </div>
+  </section>
+  <section class="contact">
+    <h1 id="contact">CONTACT</h1>
+    <div class="contact_form">
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf823qTNDeGBrYqPaufrehDONJWTc4sY9FcMf0raoJVBwI__w/formResponse" method="post">
+        <input type="text" name="entry.783852847" placeholder="お名前">
+        <input type="email" name="entry.1388704559" placeholder="メールアドレス">
+        <div class="textarea">
+          <textarea id="comment" name="entry.94161052" placeholder="お問い合わせ内容"></textarea>
+        </div>
+        <!--
+        <div class="">
+          <input id="check" type="checkbox" name="" value="check">
+          <label class="check" for="check">プライバシーポリシーに同意する</label>
+        </div>-->
+        <div>
+          <button class="btn" type="button" onclick="submit();">送信</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
+<footer><small>© 2026 kasumiharada</small></footer>
+<!--
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navBox = document.querySelector('.nav_box');
+
+// ハンバーガークリックで開閉
+hamburger.addEventListener('click', () => {
+  navBox.classList.toggle('active');
+});
+
+// ナビリンクをクリックしたらメニュー閉じる & スムーズスクロール
+document.querySelectorAll('.nav_box a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault(); // デフォルトジャンプを止める
+
+    const targetId = link.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+
+    // ハンバーガーメニューを閉じる
+    navBox.classList.remove('active');
+
+    // スムーズスクロール
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>-->
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KASUMI PORTFOLIO</title>
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- 共通ヘッダー読み込み -->
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    // hamburger.jsを読み込む
+    const script = document.createElement('script');
+    script.src = 'assets/js/hamburger.js';
+    document.body.appendChild(script);
+  });
+</script>
+<section class="">
+  <div class="project_title">
+    <h1 class="project_h1">kasumiharada portfolio</h1>
+    <div class="project_a"><a href=""></a>
+      <p class="project_p">website</p>
+    </div>
+  </div>
+  <div class="mockimg_area"> <img src="assets/img/PClong_mockup4.jpg" alt=""> </div>
+  <div class="feature_area">
+    <h1>FEATURE</h1>
+    <div class="feature">
+      <div class="f_title">概要</div>
+      <div class="f_caption">自身のポートフォリオサイトを制作。</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">制作期間</div>
+      <div class="f_caption">2023年8月</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">目的</div>
+      <div class="f_caption">自分のスキルや経歴をWEBサイトにまとめることで、採用担当者にわかりやすく伝えるため。 </div>
+    </div>
+    <div class="feature">
+      <div class="f_title">制作範囲</div>
+      <div class="f_caption">デザイン / コーディング</div>
+    </div>
+    <div class="feature">
+      <div class="f_title">使用ツール</div>
+      <div class="f_caption">Adobe XD / Adobe Illustrator / Adobe PhotoShop / Adobe Dreamweaver </div>
+    </div>
+  </div>
+  <div class="designimg"><img class="design" src="assets/img/portfolio_f_webdesign.jpg" alt=""></div>
+</section>
+<footer><small>© 2026 kasumiharada</small></footer>
+</body>
+</html>
