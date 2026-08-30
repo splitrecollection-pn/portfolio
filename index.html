@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KASUMI NAKAZAWA PORTFOLIO</title>
+<title>KASUMI PORTFOLIO</title>
 <link rel="stylesheet" href="assets/css/reset.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,28 +21,12 @@ fetch('header.html')
     document.body.appendChild(script);
   });
 </script>
-<!--
-<header>
-  <div class="head_flexbox">
-    <div class="head_title"><a href="index.html">KASUMI HARADA</a></div>
-    <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-      <div class="nav_box">
-        <div class="head_nav"><a href="#works">WORKS</a></div>
-        <div class="head_nav"><a href="#about">ABOUT</a></div>
-        <div class="head_nav"><a href="#contact">CONTACT</a></div>
-      </div>
-    </div>
-</header>
--->
+
 <div class="fv">
   <div class="title">
-    <div class="fv_title">KASUMI NAKAZAWA</div>
+    <div class="fv_title"> KASUMI NAKAZAWA</div>
     <div class="fv_title">PORT FOLIO</div>
-    <div class="fv_minititle">WEB DESIGN , GRAPHIC DESIGN</div>
+    <div class="fv_minititle">WEB DESIGN , GRAPHIC DESIGN , VIDEO EDITING</div>
   </div>
 </div>
 <div class="maincontents">
@@ -53,44 +37,70 @@ fetch('header.html')
       <h2 class="s_tt">web design</h2>
       <ul class="pc_mock_box">
         <li>
-          <div class="pc_mock"><a href="mina_webdesign.html"><img src="assets/img/PC_mockup2.jpg" alt=""></a>
+          <div class="pc_mock work-modal-trigger" data-work-id="mina">
+            <img src="assets/img/PC_mockup2.jpg" alt="">
             <h3>mina illustratorsite</h3>
             <p>WEBサイト/クライアントワーク</p>
           </div>
         </li>
         <li>
-          <div class="pc_mock"><a href="mynavi_webdesign.html"><img src="assets/img/PC_mockup1.jpg" alt=""></a>
+          <div class="pc_mock work-modal-trigger" data-work-id="mynavi">
+            <img src="assets/img/PC_mockup1.jpg" alt="">
             <h3>マイナビスタッフ様 LP</h3>
             <p>LP/スクール課題（クライアントワーク）</p>
           </div>
         </li>
         <li>
-          <div class="pc_mock"><a href="portfolio_webdesign.html"><img src="assets/img/PC_mockup4.jpg" alt=""></a>
-            <h3>My portfolio</h3>
+          <div class="pc_mock work-modal-trigger" data-work-id="portfolio">
+            <img src="assets/img/PC_mockup4.png" alt="">
+            <h3>KASUMI NAKAZAWA portfolio</h3>
             <p>WEBサイト/自己制作</p>
           </div>
         </li>
-        <li>
+       <!-- <li>
           <div class="pc_mock"><a href="gypla_webdesign.html"><img src="assets/img/PC_mockup3.jpg" alt=""></a>
             <h3>Gypsophiure officialsite</h3>
             <p>WEBサイト/自己制作</p>
           </div>
-        </li>
+        </li>-->
       </ul>
     </div>
     <div class="website">
       <h2 class="s_tt">graphic</h2>
       <ul class="pc_mock_box">
         <li>
-          <div class="pc_mock"><a href="sell_design.html"><img src="assets/img/Moonshine_BOXJKset.jpg" alt=""></a>
+          <div class="pc_mock work-modal-trigger" data-work-id="moonshine">
+            <img src="assets/img/Moonshine_BOXJKset.jpg" alt="">
             <h3>ドラマDVDBOX</h3>
             <p>セル、ジャケット、レーベルデザイン/社内制作物</p>
           </div>
         </li>
         <li>
-          <div class="pc_mock"><a href="rental_design.html"><img src="assets/img/Dare to Love Me_jacket_JK.jpg" alt=""></a>
+          <div class="pc_mock work-modal-trigger" data-work-id="daretoloveme">
+            <img src="assets/img/Dare to Love Me_jacket_JK.jpg" alt="">
             <h3>ドラマレンタルDVD</h3>
             <p>レンタルジャケット、レーベル/社内制作物</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock work-modal-trigger" data-work-id="nothinguncovered">
+            <img src="assets/img/Nothing Uncovered_jacket.png" alt="">
+            <h3>ドラマレンタルDVD</h3>
+            <p>レンタルジャケット、レーベル/社内制作物</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock work-modal-trigger" data-work-id="undercoverhighschool">
+            <img src="assets/img/Undercover_High_School_jacket_format.png" alt="">
+            <h3>ドラマレンタルDVD</h3>
+            <p>レンタルジャケット、レーベル/社内制作物</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock work-modal-trigger" data-work-id="logo">
+            <img src="assets/img/logo_mockup.png" alt="">
+            <h3>邦題ロゴデザイン</h3>
+            <p>ロゴデザイン/社内制作物</p>
           </div>
         </li>
         <li>
@@ -125,27 +135,75 @@ fetch('header.html')
       <h2 class="s_tt">video production</h2>
       <ul class="pc_mock_box">
         <li>
-          <div class="pc_mock"><iframe src="https://www.youtube.com/embed/lb1JhVefAzA" title="子供ができました" frameborder="0" allowfullscreen></iframe>
+          <div class="pc_mock video_mock">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lb1JhVefAzA?si=aBh4NwMvNBxHYICQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+            <div class="pc_mock">
             <h3>ティザー制作</h3>
             <p>映像作品予告動画/社内制作物</p>
           </div>
         </li>
        <li>
-          <div class="pc_mock"><iframe src="https://www.youtube.com/embed/pwlCaCOU1mE?si=g_0O7bih_4npnkdC" title="宇宙をあげる" frameborder="0" allowfullscreen></iframe>
+          <div class="pc_mock video_mock">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pwlCaCOU1mE?si=priY-PcXveDWQ4Fq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+            <div class="pc_mock">
             <h3>ティザー制作</h3>
             <p>映像作品予告動画/社内制作物</p>
           </div>
         </li>
         <li>
-          <div class="pc_mock"><iframe src="https://www.youtube.com/embed/weoUQcinLg8?si=6MXLeImaCNDc7qhQ" title="次の人生はないから" frameborder="0" allowfullscreen></iframe>
+          <div class="pc_mock video_mock">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/weoUQcinLg8?si=CR6C7KTa_WYWlsD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+           <div class="pc_mock">
             <h3>ティザー制作</h3>
             <p>映像作品予告動画/社内制作物</p>
           </div>
         </li>
           <li>
-          <div class="pc_mock"><iframe src="https://www.youtube.com/embed/yyzoU8BXbhM?si=R7YCjF8lHjdDaGiL" title="かけがえのない私のスター" frameborder="0" allowfullscreen></iframe>
+          <div class="pc_mock video_mock">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yyzoU8BXbhM?si=LVtOvZT3c1av61wW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="pc_mock">
             <h3>ティザー制作</h3>
             <p>映像作品予告動画/社内制作物</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock video_mock">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/w9qjNgGNfuE?si=jdEsKSUiTT1xfx1Z" title="愛する盗賊様よ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="pc_mock">
+            <h3>ティザー制作</h3>
+            <p>映像作品予告動画/社内制作物</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock video_mock">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dg9b7udUXPc?si=ekSJ61d0_ToMbHG3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="pc_mock">
+            <h3>ティザー制作</h3>
+            <p>映像作品予告動画/社内制作物</p>
+          </div>
+        </li>
+         <li>
+          <div class="pc_mock video_mock">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@unext_k/video/7663401716922027265" data-video-id="7663401716922027265" style="max-width: 100%;" > <section> <a target="_blank" title="@unext_k" href="https://www.tiktok.com/@unext_k?refer=embed">@unext_k</a> ◤ミステリアスな美しき策士・ギュリ◢ 見知らぬ男女が共同生活を送る「シグナルハウス」。 “友達以上恋人未満”な男女が、もどかしくもリアルな恋模様を展開💕 U-NEXTオリジナル『HEART SIGNAL5 』見放題で独占配信中✨毎週（火）12:00～最新話更新 <a title="heartsignal5" target="_blank" href="https://www.tiktok.com/tag/heartsignal5?refer=embed">#HEARTSIGNAL5</a> <a title="하트시그널5" target="_blank" href="https://www.tiktok.com/tag/%ED%95%98%ED%8A%B8%EC%8B%9C%EA%B7%B8%EB%84%905?refer=embed">#하트시그널5</a> <a title="恋リア" target="_blank" href="https://www.tiktok.com/tag/%E6%81%8B%E3%83%AA%E3%82%A2?refer=embed">#恋リア</a> <a title="unext" target="_blank" href="https://www.tiktok.com/tag/unext?refer=embed">#UNEXT</a> <a target="_blank" title="♬ オリジナル楽曲  - U-NEXT韓流・アジア" href="https://www.tiktok.com/music/オリジナル楽曲-U-NEXT韓流-アジア-7663402240727730960?refer=embed">♬ オリジナル楽曲  - U-NEXT韓流・アジア</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+            <div class="pc_mock">
+            <h3>SNS用PR動画制作</h3>
+            <p>映像作品PR動画/社内制作物</p>
+          </div>
+        </li>
+        <li>
+          <div class="pc_mock video_mock">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@unext_k/video/7589114151046221057" data-video-id="7589114151046221057" style="max-width: 100%;" > <section> <a target="_blank" title="@unext_k" href="https://www.tiktok.com/@unext_k?refer=embed">@unext_k</a> ある日チャウヌが同居人になったら『フィンランド間借り暮らし』U-NEXTにて独占見放題配信中💗 <a title="フィンランド間借り暮らし" target="_blank" href="https://www.tiktok.com/tag/%E3%83%95%E3%82%A3%E3%83%B3%E3%83%A9%E3%83%B3%E3%83%89%E9%96%93%E5%80%9F%E3%82%8A%E6%9A%AE%E3%82%89%E3%81%97?refer=embed">#フィンランド間借り暮らし</a> <a title="イジェフン" target="_blank" href="https://www.tiktok.com/tag/%E3%82%A4%E3%82%B8%E3%82%A7%E3%83%95%E3%83%B3?refer=embed">#イジェフン</a> <a title="チャウヌ" target="_blank" href="https://www.tiktok.com/tag/%E3%83%81%E3%83%A3%E3%82%A6%E3%83%8C?refer=embed">#チャウヌ</a>（<a title="astro" target="_blank" href="https://www.tiktok.com/tag/astro?refer=embed">#ASTRO</a>） <a title="イドンフィ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%A4%E3%83%89%E3%83%B3%E3%83%95%E3%82%A3?refer=embed">#イドンフィ</a> <a title="クァクドンヨン" target="_blank" href="https://www.tiktok.com/tag/%E3%82%AF%E3%82%A1%E3%82%AF%E3%83%89%E3%83%B3%E3%83%A8%E3%83%B3?refer=embed">#クァクドンヨン</a> <a title="unext" target="_blank" href="https://www.tiktok.com/tag/unext?refer=embed">#unext</a> <a target="_blank" title="♬ オリジナル楽曲  - U-NEXT韓流・アジア" href="https://www.tiktok.com/music/オリジナル楽曲-U-NEXT韓流-アジア-7589114672083766034?refer=embed">♬ オリジナル楽曲  - U-NEXT韓流・アジア</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+            <div class="pc_mock">
+            <h3>SNS用PR動画制作/ロゴ制作</h3>
+            <p>映像作品PR動画/社内制作物</p>
           </div>
         </li>
       </ul>
@@ -318,32 +376,69 @@ fetch('header.html')
     </div>
   </section>
 </div>
+
+<div id="work-modal" class="work-modal" aria-hidden="true">
+  <div class="work-modal__overlay"></div>
+
+  <div class="work-modal__content">
+    <button class="work-modal__close" type="button" aria-label="閉じる">
+      ×
+    </button>
+
+    <div class="work-modal__inner">
+
+      <div class="work-modal__title">
+        <h1 id="modal-title"></h1>
+
+  <div class="work-modal__link">
+    <a id="modal-url" href="" target="_blank" rel="noopener"></a>
+    <p id="modal-category"></p>
+  </div>
+</div>
+
+      <div class="mockimg_area">
+        <img id="modal-image" src="" alt="">
+      </div>
+
+      <div class="feature_area">
+
+        <h1>FEATURE</h1>
+
+        <div class="feature">
+          <div class="f_title">概要</div>
+          <div class="f_caption" id="modal-overview"></div>
+        </div>
+
+        <div class="feature">
+          <div class="f_title">制作期間</div>
+          <div class="f_caption" id="modal-period"></div>
+        </div>
+
+        <div class="feature">
+          <div class="f_title">目的</div>
+          <div class="f_caption" id="modal-purpose"></div>
+        </div>
+
+        <div class="feature">
+          <div class="f_title">制作範囲</div>
+          <div class="f_caption" id="modal-scope"></div>
+        </div>
+
+        <div class="feature">
+          <div class="f_title">使用ツール</div>
+          <div class="f_caption" id="modal-tools"></div>
+        </div>
+
+      </div>
+
+      <div class="designimg">
+        <img id="modal-detail-image" class="design" src="" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>
 <footer><small>© 2026 kasuminakazawa</small></footer>
-<!--
-<script>
-const hamburger = document.querySelector('.hamburger');
-const navBox = document.querySelector('.nav_box');
-
-// ハンバーガークリックで開閉
-hamburger.addEventListener('click', () => {
-  navBox.classList.toggle('active');
-});
-
-// ナビリンクをクリックしたらメニュー閉じる & スムーズスクロール
-document.querySelectorAll('.nav_box a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault(); // デフォルトジャンプを止める
-
-    const targetId = link.getAttribute('href').slice(1);
-    const target = document.getElementById(targetId);
-
-    // ハンバーガーメニューを閉じる
-    navBox.classList.remove('active');
-
-    // スムーズスクロール
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
-</script>-->
+<script src="assets/js/work-modal.js"></script>
 </body>
 </html>

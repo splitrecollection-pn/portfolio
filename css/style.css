@@ -1,0 +1,673 @@
+@charset "UTF-8";
+/* CSS Document */
+ul,li{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, "serif";
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.hamburger{
+  display:none;
+  width:30px;
+  cursor:pointer;
+  margin-left:auto;
+}
+.hamburger span{
+  display:block;
+  height:3px;
+  background:#707070;
+  margin:6px 0;
+}
+.works {
+  padding: 2.5em 2%;
+  background-color: lavenderblush;
+}
+.skills {
+  padding: 2.5em 2%;
+  background-color: rgba(190, 200, 220, 0.1);
+}
+.about {
+  padding: 2.5em 2%;
+}
+.contact {
+  padding: 2.5em 2%;
+  background-color: rgba(211, 232, 255, 0.6);
+}
+h1 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, "serif";
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: center;
+  color: #707070;
+  margin-bottom: 1.5rem;
+}
+p {
+  color: #707070;
+}
+/*.maincontents {
+  padding: 0 2%;
+}*/
+	.head_flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 4%;
+  z-index: 99999;
+}
+	.nav_box {
+  display: flex;
+  margin-left: 10px;
+  color: #707070;
+}
+.head_nav {
+  margin-left: 40px;
+}
+.head_title {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, "serif";
+  color: #707070;
+}
+.fv {
+  background-image: url("../img/sand-4726119_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+  display:flex;
+  align-items:center;
+  
+}
+.fv_title {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, "serif";
+  color: #707070;
+  margin: 2% 0;
+  font-size: 2.3em;
+}
+.title {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 40%;
+  padding: 50px 3%;
+  display: inline-block;
+  margin-top: 0;
+}
+.fv_minititle {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, "serif";
+  color: #707070;
+  margin: 2% 0;
+  font-size: 1em;
+}
+.website {
+  margin-bottom: 40px;
+}
+.spacer {
+  width: 100%;
+}
+.s_tt {
+  display: flex;
+  align-items: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, "serif";
+  text-align: center;
+  font-size: 1.5em;
+  width: 94%;
+  margin: 2rem auto;
+  color: #707070;
+}
+.s_tt:before, .s_tt:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  border-top: 1px solid #707070;
+  display: block;
+}
+.s_tt:before {
+  margin-right: 1rem;
+}
+.s_tt:after {
+  margin-left: 1rem;
+}
+.pc_mock_box {
+  /*display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto 20px;
+  width: 95%;*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 95%;
+  margin: 0 auto 20px;
+}
+
+
+/* 変更前
+.pc_mock {
+  margin: 0 1% 5%;
+  object-fit: cover;
+  width: 20em;
+}
+.pc_mock img {
+  width: 20em;
+  height: 20em;
+  box-shadow: 5px 5px 7px -5px #ece6ea;
+}
+  */
+.pc_mock {
+  /*
+  width: calc(50% - 30px);
+  max-width: 320px;
+  margin-bottom: 30px;*/
+  width: 100%;
+  text-align: center;
+}
+.pc_mock img {
+  width: 100%;
+  height: auto;
+}
+
+.pc_mock h3 {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+  font-size: 1.2rem;
+  color: #707070;
+  text-align: center;
+  margin-top: 1rem;
+}
+.pc_mock p {
+  text-align: center;
+}
+.pc1 {
+  width: 20em;
+  height: 20em;
+  background-image: url("../img/PC_mockup2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.software {
+  max-width: 390px;
+  margin: 0 auto;
+}
+.software ul {
+  padding: 0;
+}
+.star {
+  margin-right: 0.5%;
+}
+.star img {
+  width: 25px;
+  margin: 0px 0 15px 10px;
+}
+.star_box {
+  width: 50%;
+  display: flex;
+}
+.skills_box {
+  display: flex;
+  justify-content: left;
+}
+.soft_box {
+  width: 60%;
+}
+.soft_box p {
+  margin: 0;
+}
+.skills_box p {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, "serif";
+  font-size: 1.2em;
+}
+.icon img {
+  display: block;
+  width: 80px;
+  margin: 0 auto 20px;
+}
+.caption {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+  font-size: 1em;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+.contact_form {
+  margin: 0 auto;
+  text-align: center;
+}
+form {
+  max-width: 680px;
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  font-size: 20px;
+}
+input[type="text"], input[type="email"] {
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;
+  margin: 0 0 20px;
+  width: 90%;
+  text-align: left;
+  color: #999999;
+}
+textarea {
+  text-align: left;
+  background-color: #FFF;
+  font-size: 15px;
+  width: 90%;
+  border-radius: 5px;
+  padding: 15px;
+  height: 300px;
+  color: #999999;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: #B4D3FF;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 15px 25px;
+  width: 200px;
+  margin: 0 auto;
+  color: #707070;
+}
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+small {
+  color: #707070;
+  font-weight: 100;
+}
+.project_title {
+  padding: 120px 6% 50px;
+  margin: 0 auto;
+  background-color: rgba(190, 200, 220, 0.1);
+}
+.project_title a {
+  color: #707070;
+}
+.project_h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+.project_p {
+  text-align: center;
+  margin-top: 5px;
+}
+.project_a {
+  margin: 0 auto;
+  text-align: center;
+}
+.mockimg_area {
+  width: 60%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.feature_area {
+  margin: 0 auto;
+  background-color: rgba(211, 232, 255, 0.6);
+  padding: 2.5em 2%;
+}
+.feature {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 80%;
+  margin: 0 auto 2rem;
+  color: #707070;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+}
+.f_title {
+  width: 25%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.f_caption {
+  width: 80%;
+  text-align: left;
+}
+.designimg {
+  /* width: 590px; */
+  /* height: 1000px; */
+  /* overflow-x: visible; */
+  /* overflow-y: scroll; */
+  /* max-width: 90%; */
+  padding: 50px 2%;
+  /* margin: 0 auto; */
+  background-color: rgba(190, 200, 220, 0.1);
+}
+.design {
+  display: block;
+  width: 740px;
+  /* height: 1000px; */
+  /* overflow-x: visible; */
+  /* overflow-y: hidden; */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .head_flexbox {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 4%;
+    text-align: center;
+  }
+
+  .nav_box {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 10px;
+    margin-top: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255,0.9);
+  }
+
+  .pc_mock_box {
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap:40px;
+  }
+
+  .pc_mock {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .pc_mock img {
+    width: 100%;
+    height: auto;
+    display:block;
+    margin:0 auto;
+  }
+  
+.pc_mock iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  border:none;
+}
+
+  .title {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .fv {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .icon img {
+    width: 30%;
+  }
+
+  /*.caption {
+    width: 95%;
+  }*/
+
+  .skills_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .star_box {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  form input,
+
+  .btn {
+    width: 100%;
+  }
+}
+/* 768px以下：タブレット・スマホ */
+@media screen and (max-width: 768px) {
+  .hamburger{
+  display:block;
+}
+
+.nav_box{
+  display:none;
+  flex-direction:column;
+  width:100%;
+  text-align:center;
+  background:#fff;
+}
+
+.nav_box.active{
+  display:flex;
+}
+ /* スキル非表示 */
+    .skills{
+    display: none;
+  }
+  .head_title{
+    display: none;
+  }
+   form textarea{
+    width: 90%;
+
+   }
+ /* ヘッダーの高さとナビ調整 */
+ .head_flexbox {
+   flex-direction: column;
+   height: auto;
+   padding: 10px 4%;
+ }
+ .nav_box {
+   margin-left: 0;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ /* ハンバーガーメニュー用 */
+.nav_box {
+  position: fixed;
+  top: 0;
+  right: -100%; /* 最初は非表示 */
+  width: 60%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* PCと同じ半透明白 */
+  backdrop-filter: blur(5px); /* 背景を少しぼかす */
+  flex-direction: column;
+  align-items: center; /* 横方向は中央 */
+  justify-content: flex-start; /* 縦方向を上部寄せに変更 */
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+/* メニューを開いた状態 */
+.nav_box.active {
+  right: 0;
+  width: 40%;
+  padding-top: 60px; /* 上部に少し余白を入れたい場合 */
+}
+ .head_nav {
+   margin: 0 auto;
+ }
+
+ /* FVテキストボックスを幅いっぱいに */
+ .fv .title {
+   width: 90%;
+   margin-top: 15em;
+   padding: 30px 3%;
+ }
+ .fv_title {
+   font-size: 1.5em;
+ }
+ .fv_minititle {
+   font-size: 0.9em;
+ }
+
+ /* WORKSカードを1列表示 */
+ .pc_mock_box {
+   flex-direction: column;
+   align-items: center;
+ }
+ .pc_mock {
+   width: 90% !important;
+   margin: 10px auto;
+ }
+ .pc_mock img {
+   width: 100% !important;
+   height: auto !important;
+ }
+.about{
+  background-color: rgba(190, 200, 220, 0.1);
+}
+ /* スキル星マーク非表示（スマホでは省略可能） */
+ .software {
+   display: none;
+ }
+}
+
+/* 480px以下：スマホ縦向き */
+@media screen and (max-width: 480px) {
+ .fv .title {
+   margin-top: 12em;
+   padding: 20px 2%;
+ }
+ .fv_title {
+   font-size: 1.3em;
+ }
+ .fv_minititle {
+   font-size: 0.8em;
+ }
+ .btn {
+   width: 150px;
+   padding: 10px 15px;
+   font-size: 1em;
+ }
+}
+.nav_box,
+.nav_box ul,
+.nav_box li {
+  margin: 0;
+  padding: 0;
+}
+.nav_inner {
+  padding: 20px; /* 内部余白はここで調整 */
+  text-align: left;
+  width: 100%;
+}
+#works,#about,#contact {
+  scroll-margin-top: 40px;
+}
+
+/* =========================
+   WORK MODAL
+========================= */
+
+.work-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+.work-modal.is-open {
+  display: block;
+}
+
+.work-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.work-modal__content {
+  position: relative;
+  width: min(900px, 90%);
+  height: 90vh;
+  margin: 5vh auto;
+  background: #fff;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.work-modal__inner {
+  padding: 50px;
+}
+
+.work-modal__close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 2;
+
+  border: none;
+  background: transparent;
+
+  font-size: 40px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+
+/* スマートフォン */
+@media screen and (max-width: 768px) {
+
+  .work-modal__content {
+    width: 94%;
+    height: 94vh;
+    margin: 3vh auto;
+  }
+
+  .work-modal__inner {
+    padding: 30px 20px;
+  }
+
+  .work-modal__close {
+    top: 8px;
+    right: 12px;
+    font-size: 32px;
+  }
+
+}
+
+.work-modal__title {
+  padding: 30px 6%;
+  background-color: rgba(190, 200, 220, 0.1);
+}
+
+.work-modal__title h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.work-modal__link {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pc_mock img {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.pc_mock:hover img {
+  filter:  brightness(80%);
+  transform: scale(1.02);
+}
+
+.video_mock {
+  background-color: #fff;
+  padding: 70px 20px;
+  box-sizing: border-box;
+}
