@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const modal = document.getElementById("work-modal");
   const closeButton = document.querySelector(".work-modal__close");
+  const bottomCloseButton = document.querySelector(".work-modal__bottom-close button");
   const overlay = document.querySelector(".work-modal__overlay");
 
   const title = document.getElementById("modal-title");
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
           purpose.textContent = work.purpose;
           scope.textContent = work.scope;
           tools.textContent = work.tools;
-          
+
           if (work.detailImage) {
             detailImage.src = work.detailImage;
             detailImage.alt = work.title;
@@ -88,6 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   closeButton.addEventListener("click", closeModal);
+
+  bottomCloseButton.addEventListener("click", closeModal);
 
   overlay.addEventListener("click", closeModal);
 
