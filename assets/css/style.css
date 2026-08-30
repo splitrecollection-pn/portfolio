@@ -671,3 +671,18 @@ body.modal-open {
   padding: 70px 20px;
   box-sizing: border-box;
 }
+
+.work-modal__bottom-close {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.work-modal__bottom-close button {
+  background-color: #B4D3FF;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 12px 30px;
+  color: #707070;
+}
