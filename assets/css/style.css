@@ -13,6 +13,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
 }
 .hamburger{
   display:none;
@@ -63,6 +64,7 @@ p {
   height: 70px;
   margin: 0 auto;
   padding: 0 4%;
+  z-index: 99999;
 }
 	.nav_box {
   display: flex;
@@ -391,6 +393,7 @@ small {
     display:block;
     margin:0 auto;
   }
+  
 .pc_mock iframe{
   width:100%;
   aspect-ratio:16/9;
@@ -562,4 +565,109 @@ small {
 }
 #works,#about,#contact {
   scroll-margin-top: 40px;
+}
+
+/* =========================
+   WORK MODAL
+========================= */
+
+.work-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+.work-modal.is-open {
+  display: block;
+}
+
+.work-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.work-modal__content {
+  position: relative;
+  width: min(900px, 90%);
+  height: 90vh;
+  margin: 5vh auto;
+  background: #fff;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.work-modal__inner {
+  padding: 50px;
+}
+
+.work-modal__close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 2;
+
+  border: none;
+  background: transparent;
+
+  font-size: 40px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+
+/* スマートフォン */
+@media screen and (max-width: 768px) {
+
+  .work-modal__content {
+    width: 94%;
+    height: 94vh;
+    margin: 3vh auto;
+  }
+
+  .work-modal__inner {
+    padding: 30px 20px;
+  }
+
+  .work-modal__close {
+    top: 8px;
+    right: 12px;
+    font-size: 32px;
+  }
+
+}
+
+.work-modal__title {
+  padding: 30px 6%;
+  background-color: rgba(190, 200, 220, 0.1);
+}
+
+.work-modal__title h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.work-modal__link {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pc_mock img {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.pc_mock:hover img {
+  filter:  brightness(80%);
+  transform: scale(1.02);
+}
+
+.video_mock {
+  background-color: #fff;
+  padding: 70px 20px;
+  box-sizing: border-box;
 }
